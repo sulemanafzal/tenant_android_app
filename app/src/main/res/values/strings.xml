@@ -96,6 +96,18 @@
     <string name="str_i_didn_t_receive_a_code">I didn’t receive a code</string>
     <string name="str_resend">Resend</string>
     <string name="str_verify">Verify</string>
-    <string name="str_we_ve_sent_an_sms_with_an_activation_n_code_to_your_phone_number_ending_with_n_290_enter_the_code_below">We’ve sent an SMS with an activation \n code to your phone number ending with \n *****290. Enter the Code below</string>
+    <string name="str_we_ve_sent_an_sms_with_an_activation_n_code_to_your_phone_number_ending_with_n_290_enter_the_code_below">We’ve sent an SMS with an activation \n code to your phone number ending with \n </string>
+    <string name="str_enter_the_code_below">Enter the Code below</string>
     <string name="str_verify_your_phone_number">Verify your phone number</string>
+    <string name="str_phone_number">***290.</string>
+    <string name="str_congratulations_you_have_been_successfully_authenticated">Congratulations! You have been \n successfully authenticated</string>
+    <string name="str_success">Success!</string>
+    <string name="str_welcome">Welcome</string>
+    <string name="maintenance_and_service_provider">Maintenance And Service Provider</string>
+    <string name="str_continue">Continue</string>
+    <string name="str_service_provider">Service Provider</string>
+    <string name="str_maintenance_company">Maintenance Company</string>
+    <string name="str_owner_and_tenant_both">Owner and Tenant Both</string>
+    <string name="str_owner">Owner</string>
+    <string name="str_please_choose_one_to_continue">Please choose one to continue</string>
 </resources>

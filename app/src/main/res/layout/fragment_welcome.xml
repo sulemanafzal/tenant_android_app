@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragment.WelcomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- Wave shape at the top -->
+        <FrameLayout
+            android:id="@+id/wave_top"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_370sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_welcome_bg" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_texturee" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/img_welcom_screen"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/wave_top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wave_top" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/outfit_semibold"
+            android:gravity="start"
+            android:text="@string/str_welcome"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_26ssp"
+            app:layout_constraintEnd_toEndOf="@+id/img_welcom_screen"
+            app:layout_constraintStart_toStartOf="@+id/img_welcom_screen"
+            app:layout_constraintTop_toBottomOf="@+id/img_welcom_screen" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_medium"
+            android:gravity="start"
+            android:lines="1"
+            android:text="Register yourself now to enjoy our  services!"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/img_welcom_screen"
+            app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
+
+
+        <View
+            android:id="@+id/underline"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@drawable/bg_line_separator"
+            android:backgroundTint="@color/blue_dark"
+            app:layout_constraintStart_toStartOf="@+id/appCompatTextView"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+
+        <ImageView
+            android:id="@+id/img_next"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:src="@drawable/ic_next_welcomescreen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".SignInFragment">
+    tools:context=".ui.fragment.SignInFragment">
 
     <!-- res/layout/activity_sign_in.xml -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/ic_texture" />
+                android:src="@drawable/ic_texturee" />
 
         </FrameLayout>
 

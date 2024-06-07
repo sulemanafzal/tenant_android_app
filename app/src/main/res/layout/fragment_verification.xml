@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".VerificationFragment">
+    tools:context=".ui.fragment.VerificationFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#f9f9f9">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageView"
-            android:layout_width="@dimen/_28sdp"
-            android:layout_height="@dimen/_28sdp"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
             android:layout_margin="@dimen/_12sdp"
             android:padding="@dimen/_4sdp"
             android:background="@drawable/bg_rounded_corner_color"
@@ -23,7 +23,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_back_left" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/phoneLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,17 +31,18 @@
             android:text="@string/str_verify_your_phone_number"
             android:textColor="@color/black"
             android:textSize="@dimen/_20ssp"
-            android:textStyle="bold"
+            android:fontFamily="@font/outfit_semibold"
             app:layout_constraintBottom_toTopOf="@id/textView4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/imageView"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:fontFamily="@font/outfit_regular"
             android:text="@string/str_we_ve_sent_an_sms_with_an_activation_n_code_to_your_phone_number_ending_with_n_290_enter_the_code_below"
             android:textSize="@dimen/_14ssp"
             app:layout_constraintBottom_toTopOf="@id/otp_view"
@@ -49,6 +50,31 @@
             app:layout_constraintStart_toStartOf="@+id/phoneLbl"
             app:layout_constraintTop_toBottomOf="@+id/phoneLbl" />
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:fontFamily="@font/outfit_regular"
+            android:gravity="center"
+            android:text="@string/str_phone_number"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/tv_enter_code_below" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_enter_code_below"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/outfit_regular"
+            android:text="@string/str_enter_the_code_below"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/tv_phone_number" />
 
         <com.mukesh.OtpView
             android:id="@+id/otp_view"
@@ -63,7 +89,6 @@
             android:textColor="@color/black"
             app:OtpLineColor="@color/gray"
             app:OtpViewType="line"
-            app:bar_enabled="true"
             app:OtpState_filled="true"
             app:layout_constraintBottom_toTopOf="@id/tv_resend"
             app:layout_constraintEnd_toEndOf="parent"
@@ -77,6 +102,7 @@
             android:layout_marginTop="@dimen/_12sdp"
             android:fontFamily="@font/outfit_regular"
             android:gravity="end"
+
             android:text="@string/str_i_didn_t_receive_a_code"
             android:textColor="@color/gray"
             android:textSize="@dimen/_12ssp"
