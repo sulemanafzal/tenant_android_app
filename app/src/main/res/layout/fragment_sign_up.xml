@@ -33,7 +33,6 @@
                 android:src="@drawable/ic_texturee" />
         </FrameLayout>
 
-
         <TextView
             android:id="@+id/signup_tv"
             android:layout_width="0dp"

@@ -44,7 +44,7 @@
             android:layout_marginHorizontal="@dimen/_12sdp"
             android:layout_marginTop="@dimen/_14sdp"
             android:fontFamily="@font/outfit_semibold"
-            android:text="Sign In"
+            android:text="@string/str_sign_in"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="@dimen/_16ssp"

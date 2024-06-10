@@ -36,7 +36,11 @@
         android:id="@+id/verificationFragment"
         android:name="com.example.tenant.ui.fragment.VerificationFragment"
         android:label="fragment_verification"
-        tools:layout="@layout/fragment_verification" />
+        tools:layout="@layout/fragment_verification" >
+        <action
+            android:id="@+id/action_verificationFragment_to_tenantRegistrationProcessFragment"
+            app:destination="@id/tenantRegistrationProcessFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registrationFragment"
         android:name="com.example.tenant.fragment.RegistrationFragment"
@@ -49,4 +53,18 @@
             android:id="@+id/action_registrationFragment_to_verificationFragment"
             app:destination="@id/verificationFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/tenantRegistrationProcessFragment"
+        android:name="com.example.tenant.fragment.TenantRegistrationProcessFragment"
+        android:label="fragment_tenant_registration_process"
+        tools:layout="@layout/fragment_tenant_registration_process" >
+        <action
+            android:id="@+id/action_tenantRegistrationProcessFragment_to_tenantRegistrationSuccessFragment"
+            app:destination="@id/tenantRegistrationSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tenantRegistrationSuccessFragment"
+        android:name="com.example.tenant.fragment.TenantRegistrationSuccessFragment"
+        android:label="fragment_tenant_registration_success"
+        tools:layout="@layout/fragment_tenant_registration_success" />
 </navigation>

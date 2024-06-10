@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragment.TenantRegistrationSuccessFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="@string/str_tenants_registration_process"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgSuccess"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:src="@drawable/ic_checkmark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:tint="@color/black"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Success!"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgSuccess" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSuccessMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:text="@string/str_you_are_now_registered_as_tenant_for_property"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSuccess" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBuildingName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:text="@string/str_building_name"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="@+id/etBuildingName"
+            app:layout_constraintTop_toBottomOf="@+id/tvSuccessMessage" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etBuildingName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/outfit_regular"
+            android:hint="@string/str_building_name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBuildingName"
+            app:layout_constraintWidth_percent="0.8"
+            app:layout_goneMarginTop="@dimen/_8sdp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBuildingNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:gravity="center"
+            android:text="@string/str_building_number"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="@+id/etBuildingName"
+            app:layout_constraintTop_toBottomOf="@+id/etBuildingName" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etBuildingNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_text_background"
+            android:enabled="false"
+            android:fontFamily="@font/outfit_regular"
+            android:hint="@string/str_phone_number"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBuildingNumber"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFlatNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:text="@string/str_flat_number"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="@+id/etBuildingName"
+            app:layout_constraintTop_toBottomOf="@+id/etBuildingNumber" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etFlatNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_text_background"
+            android:enabled="false"
+            android:fontFamily="@font/outfit_regular"
+            android:hint="@string/str_flat_number_3976"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFlatNumber"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOwnerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:text="@string/str_owner_name"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="@+id/etBuildingName"
+            app:layout_constraintTop_toBottomOf="@+id/etFlatNumber" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOwnerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_text_background"
+            android:enabled="false"
+            android:fontFamily="@font/outfit_regular"
+            android:hint="ali khan"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOwnerName"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:background="@drawable/bg_rounded_corner_color"
+            android:backgroundTint="@color/black"
+            android:text="@string/str_done"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/etOwnerName"
+            app:layout_constraintStart_toStartOf="@+id/etOwnerName"
+            app:layout_constraintTop_toBottomOf="@+id/etOwnerName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

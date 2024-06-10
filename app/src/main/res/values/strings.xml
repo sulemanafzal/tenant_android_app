@@ -110,4 +110,28 @@
     <string name="str_owner_and_tenant_both">Owner and Tenant Both</string>
     <string name="str_owner">Owner</string>
     <string name="str_please_choose_one_to_continue">Please choose one to continue</string>
+    <string name="str_sign_in">Sign In</string>
+    <string name="str_already_a_registered_user">Already a Registered User?</string>
+
+
+    <string name="str_name_required">name Required</string>
+    <string name="str_contact_number_required">contact Number Required</string>
+    <string name="str_provide_valid_email">email Required</string>
+    <string name="str_tenants_registration_process">Tenants Registration Process</string>
+    <string name="str_select_the_flat_from_options_below">Select the flat from options below</string>
+    <string name="str_building_name">Building Name</string>
+    <string name="str_you_are_now_registered_as_tenant_for_property">You are now registered as tenant \n for property:</string>
+    <string name="str_building_number">Building Number</string>
+    <string name="str_flat_number">Flat Number</string>
+    <string name="str_owner_name">Owner Name</string>
+    <string name="str_done">DONE</string>
+    <string name="str_flat_number_3976">3976</string>
+
+    <string-array name="flats_array">
+        <item>Flat F1001</item>
+        <item>Flat F1002</item>
+        <item>Flat F1003</item>
+        <item>Flat F1004</item>
+        <!-- Add more items as needed -->
+    </string-array>
 </resources>
