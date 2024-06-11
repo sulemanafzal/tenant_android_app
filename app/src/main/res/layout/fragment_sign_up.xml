@@ -41,7 +41,7 @@
             android:fontFamily="@font/outfit_semibold"
             android:text="@string/str_sign_up"
             android:textColor="@color/black"
-            android:textSize="@dimen/_30ssp"
+            android:textSize="@dimen/_26ssp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/wave_top" />
 
@@ -63,12 +63,12 @@
             android:fontFamily="@font/outfit_medium"
             android:text="@string/str_please_choose_one_to_continue"
             android:textColor="@color/black"
-            android:textSize="@dimen/_20sdp"
+            android:textSize="@dimen/_18sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/underline" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/owner_tv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
             app:layout_constraintWidth_percent="0.9" />
 
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tenant_tv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
             app:layout_constraintWidth_percent="0.9" />
 
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/owner_and_tenant_tv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
             app:layout_constraintWidth_percent="0.9" />
 
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/mantinance_company_tv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
             app:layout_constraintWidth_percent="0.9" />
 
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/service_provider_tv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

@@ -126,6 +126,11 @@
     <string name="str_owner_name">Owner Name</string>
     <string name="str_done">DONE</string>
     <string name="str_flat_number_3976">3976</string>
+    <string name="str_job_1218923">Job - 1218923</string>
+    <string name="str_fan_repair_works_at_lounge">Fan Repair Works at lounge</string>
+    <string name="str_approval_pending">Approval Pending</string>
+    <string name="str_show_details">Show Details</string>
+    <string name="str_february_18">February 18</string>
 
     <string-array name="flats_array">
         <item>Flat F1001</item>

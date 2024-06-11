@@ -52,6 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
             android:gravity="center"
+            android:fontFamily="@font/outfit_medium"
             android:text="@string/str_you_are_now_registered_as_tenant_for_property"
             android:textSize="@dimen/_14ssp"
             app:layout_constraintEnd_toEndOf="parent"
