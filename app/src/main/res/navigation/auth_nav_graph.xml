@@ -66,5 +66,14 @@
         android:id="@+id/tenantRegistrationSuccessFragment"
         android:name="com.example.tenant.fragment.TenantRegistrationSuccessFragment"
         android:label="fragment_tenant_registration_success"
-        tools:layout="@layout/fragment_tenant_registration_success" />
+        tools:layout="@layout/fragment_tenant_registration_success" >
+        <action
+            android:id="@+id/action_tenantRegistrationSuccessFragment_to_tenantAccountFragment"
+            app:destination="@id/tenantAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tenantAccountFragment"
+        android:name="com.example.tenant.fragment.TenantAccountFragment"
+        android:label="fragment_tenant_account"
+        tools:layout="@layout/fragment_tenant_account" />
 </navigation>
