@@ -8,9 +8,10 @@
     <style name="Theme.Tenant" parent="Base.Theme.Tenant" />
 
 
-    <style name="CustomSpinnerStyle" parent="Widget.AppCompat.Spinner">
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="fontFamily">@font/outfit_medium</item>
+        <item name="android:textColor">#A0A0A0</item>
         <item name="android:textSize">@dimen/_12ssp</item>
-        <item name="android:drawable">@drawable/ic_back_left</item>
-        <!-- Add more style customizations as needed -->
     </style>
 </resources>

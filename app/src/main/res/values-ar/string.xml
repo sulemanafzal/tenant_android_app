@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">مستأجر</string>
+    <string name="large_text">
+        "إن الاستعارة الفيزيائية هي النظرية الموحدة للفضاء العقلاني ونظام الحركة."
+        "إن المادة ترتكز على الواقع الملموس، مستوحاة من دراسة الورق والحبر، ولكن"
+        "متقدم تقنيًا ومنفتح على الخيال والسحر.\n"
+        "توفر أسطح المادة وحوافها إشارات بصرية ترتكز على الواقع."</string>
+    <string name="str_number_or_email">الرقم أو البريد الإلكتروني</string>
+    <string name="str_name">اسم</string>
+    <string name="str_don_t_have_an_account">ليس لديك حساب؟</string>
+    <string name="str_sign_up">اشتراك</string>
+    <string name="str_i_didn_t_receive_a_code">لم أتلق الرمز</string>
+    <string name="str_resend">إعادة إرسال</string>
+    <string name="str_verify">يؤكد</string>
+    <string name="str_we_ve_sent_an_sms_with_an_activation_n_code_to_your_phone_number_ending_with_n_290_enter_the_code_below">لقد أرسلنا رسالة نصية قصيرة تحتوي على رمز التفعيل \n إلى رقم هاتفك الذي ينتهي بـ  </string>
+    <string name="str_enter_the_code_below">أدخل الرمز في الأسفل</string>
+    <string name="str_verify_your_phone_number">اكد على رقم هاتفك او جوالك</string>
+    <string name="str_phone_number">***290.</string>
+    <string name="str_congratulations_you_have_been_successfully_authenticated">تهانينا! لقد تم \n مصادقتك بنجاح</string>
+    <string name="str_success">نجاح!</string>
+    <string name="str_welcome">مرحباً</string>
+    <string name="maintenance_and_service_provider">مزود الصيانة والخدمة</string>
+    <string name="str_continue">يكمل</string>
+    <string name="str_service_provider">مقدم الخدمة</string>
+    <string name="str_maintenance_company">شركة صيانة</string>
+    <string name="str_owner_and_tenant_both">المالك والمستأجر على حد سواء</string>
+    <string name="str_owner">مالك</string>
+    <string name="str_please_choose_one_to_continue">الرجاء اختيار واحد للمتابعة</string>
+    <string name="str_sign_in">تسجيل الدخول</string>
+    <string name="str_already_a_registered_user">هل أنت مستخدم مسجل بالفعل؟</string>
+
+
+    <string name="str_name_required">الاسم مطلوب</string>
+    <string name="str_contact_number_required">رقم الاتصال مطلوب</string>
+    <string name="str_provide_valid_email">البريد الإلكتروني</string>
+    <string name="str_tenants_registration_process">عملية تسجيل المستأجرين</string>
+    <string name="str_select_the_flat_from_options_below">اختر الشقة من الخيارات أدناه</string>
+    <string name="str_building_name">Building Name</string>
+    <string name="str_you_are_now_registered_as_tenant_for_property">أنت الآن مسجل كمستأجر \n للعقار:</string>
+    <string name="str_building_number">رقم المبنى</string>
+    <string name="str_flat_number">عدد مسطح</string>
+    <string name="str_owner_name">اسم المالك</string>
+    <string name="str_done">منتهي</string>
+    <string name="str_flat_number_3976">3976</string>
+    <string name="str_job_1218923">وظيفة - 1218923</string>
+    <string name="str_fan_repair_works_at_lounge">أعمال إصلاح المروحة في الصالة</string>
+    <string name="str_approval_pending">في انتظار الموافقة</string>
+    <string name="str_show_details">اظهر التفاصيل</string>
+    <string name="str_february_18">18 فبراير</string>
+    <string name="str_post_a_new_job">نشر وظيفة جديدة</string>
+    <string name="str_post_new_job">نشر وظيفة جديدة</string>
+    <string name="str_in_progress">في تَقَدم</string>
+    <string name="str_completed">مكتمل</string>
+    <string name="str_register_yourself_now_to_enjoy_our_services">سجل نفسك الآن لتستمتع بخدماتنا!</string>
+    <string name="str_tenant_account">حساب المستأجر</string>
+
+    <string-array name="flats_array">
+        <item>مستوي F1001</item>
+        <item>مستوي F1002</item>
+        <item>مستوي F1003</item>
+        <item>مستوي F1004</item>
+        <!-- Add more items as needed -->
+    </string-array>
+
+    <string name="str_delete">Delete</string>
+
+</resources>

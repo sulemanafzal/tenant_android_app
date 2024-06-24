@@ -51,7 +51,7 @@
 
         <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/spinnerFlats"
-            style="@style/CustomSpinnerStyle"
+            style="@style/Spinner"
             android:layout_width="0dp"
             android:layout_height="@dimen/_32sdp"
             android:layout_marginTop="@dimen/_14sdp"

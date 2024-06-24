@@ -44,7 +44,7 @@ class SignUpFragment : Fragment() {
     private fun setupClickListener(tv: AppCompatTextView) {
         tv.setOnClickListener {
             // Reset the background of the previously selected TextView
-            selectedTextView?.setBackgroundResource(R.drawable.silver_round_shape)
+            selectedTextView?.setBackgroundResource(R.drawable.selected_background_tv)
 
             // Set the background of the newly selected TextView
             tv.setBackgroundResource(R.drawable.selected_background_tv)

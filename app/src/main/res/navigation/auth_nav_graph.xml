@@ -75,5 +75,14 @@
         android:id="@+id/tenantAccountFragment"
         android:name="com.example.tenant.fragment.TenantAccountFragment"
         android:label="fragment_tenant_account"
-        tools:layout="@layout/fragment_tenant_account" />
+        tools:layout="@layout/fragment_tenant_account" >
+        <action
+            android:id="@+id/action_tenantAccountFragment_to_postNewJobFragment"
+            app:destination="@id/postNewJobFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postNewJobFragment"
+        android:name="com.example.tenant.fragment.PostNewJobFragment"
+        android:label="fragment_post_new_job"
+        tools:layout="@layout/fragment_post_new_job" />
 </navigation>
