@@ -1,6 +1,7 @@
 package com.example.tenant
 
 import com.example.tenant.model.JobCard
+
 object Constants {
     fun getJobDetail(): ArrayList<JobCard> {
         val jobList = ArrayList<JobCard>()
@@ -22,7 +23,7 @@ object Constants {
                 R.string.str_job_1218923,
                 R.string.str_february_18,
                 R.string.large_text,
-                R.drawable.ic_approval,
+                R.drawable.ic_rejected,
                 R.string.str_approval_pending,
                 R.string.str_show_details
             )
@@ -46,7 +47,7 @@ object Constants {
                 R.string.str_job_1218923,
                 R.string.str_february_18,
                 R.string.large_text,
-                R.drawable.ic_approval,
+                R.drawable.ic_rejected,
                 R.string.str_approval_pending,
                 R.string.str_show_details
             )
@@ -58,7 +59,7 @@ object Constants {
                 R.string.str_job_1218923,
                 R.string.str_february_18,
                 R.string.large_text,
-                R.drawable.ic_approval,
+                R.drawable.ic_rejected,
                 R.string.str_approval_pending,
                 R.string.str_show_details
             )
