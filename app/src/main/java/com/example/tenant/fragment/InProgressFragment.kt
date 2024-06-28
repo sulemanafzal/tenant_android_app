@@ -22,20 +22,18 @@ class InProgressFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-       _binding = FragmentInProgressBinding.inflate(layoutInflater, container, false)
+        _binding = FragmentInProgressBinding.inflate(layoutInflater, container, false)
 
         val view = _binding?.root
 
 
-        val joblist = Constants.getJobDetail()
+        val joblist = Constants.getJobDetail(requireContext())
 
         _binding?.apply {
-            rvInProgress.layoutManager =
-                LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+            rvInProgress.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
             val jobAdapter = InProgressAdapter(joblist, requireContext())
             rvInProgress.adapter = jobAdapter
         }
-
 
         return view
     }

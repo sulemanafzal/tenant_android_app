@@ -6,7 +6,7 @@
         "technologically advanced and open to imagination and magic.\n"
         "Surfaces and edges of the material provide visual cues that are grounded in reality. The "</string>
     <string name="str_number_or_email">Number or Email</string>
-    <string name="str_name">Name</string>
+    <string name="str_name">User Name</string>
     <string name="str_don_t_have_an_account">Don’t have an account?</string>
     <string name="str_sign_up">Sign Up</string>
     <string name="str_i_didn_t_receive_a_code">I didn’t receive a code</string>
@@ -45,6 +45,7 @@
     <string name="str_job_1218923">Job - 1218923</string>
     <string name="str_fan_repair_works_at_lounge">Fan Repair Works at lounge</string>
     <string name="str_approval_pending">Approval Pending</string>
+    <string name="str_rejected_by_owner">Rejected By Owner</string>
     <string name="str_show_details">Show Details</string>
     <string name="str_february_18">February 18</string>
     <string name="str_post_a_new_job">Post a New Job</string>
@@ -55,9 +56,22 @@
     <string name="str_tenant_account">Tenant Account</string>
     <string name="str_delete">Delete</string>
     <string name="str_select_job_nature">Select Job Nature</string>
-    <string name="str_title">Title</string>
+    <string name="str_title">Enter Title</string>
     <string name="str_description">Description</string>
     <string name="str_upload_photo">Upload Photo</string>
+    <string name="str_recent">Recent</string>
+    <string name="str_posted_june_25_2024">Posted: June 25, 2024</string>
+    <string name="str_time">12:25 PM</string>
+    <string name="str_approval_pending_from_owner">Approval Pending from Owner</string>
+    <string name="str_status">Status:</string>
+    <string name="str_complaint_id_3874981">Complaint ID: 3874981</string>
+    <string name="str_fan_repair_work">Fan Repair Work</string>
+    <string name="str_please_upload_the_images">Please upload the images, size less than 1MB</string>
+    <string name="str_submit_complaint">Submit Complaint</string>
+    <string name="str_new_complaint">New Complaint</string>
+    <string name="str_select_category">Select Category</string>
+    <string name="str_no_file_chosen">No File Chosen</string>
+    <string name="str_photo">Photo</string>
 
     <string-array name="flats_array">
         <item>Flat F1001</item>

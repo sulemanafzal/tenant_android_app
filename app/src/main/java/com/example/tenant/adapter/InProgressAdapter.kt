@@ -3,6 +3,7 @@ package com.example.tenant.adapter
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.lifecycle.findViewTreeViewModelStoreOwner
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tenant.databinding.InprogressItemBinding
 import com.example.tenant.model.JobCard
@@ -25,12 +26,13 @@ class InProgressAdapter(private val joblist: ArrayList<JobCard>, val context: Co
 
     }
 
-    class JobViewHolder(val binding: InprogressItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    class JobViewHolder(val binding: InprogressItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(jobitem: JobCard) {
-            binding.jobDate.text = jobitem.jobDateId.toString()
-            binding.jobDescription.text = jobitem.jobDescriptionId.toString()
-            binding.jobTitle.text = binding.jobTitle.toString()
-            //  binding.imgApproval.setImageResource(jobitem.imgApprovalId)
+            binding.jobDate.text = jobitem.jobDateId
+            binding.jobDescription.text = jobitem.jobDescriptionId
+            binding.jobTitle.text = jobitem.jobTitleId
+            //binding.imgApproval.setImageResource(jobitem.imgApprovalId)
             //binding.jobStatus.text = jobitem.jobStatusId.toString()
             binding.showDetailsButton.setOnClickListener {
 

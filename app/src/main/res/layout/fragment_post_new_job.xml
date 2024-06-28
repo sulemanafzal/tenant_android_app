@@ -9,36 +9,49 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/_12ssp"
+        android:layout_margin="@dimen/_8sdp"
         android:padding="@dimen/_4sdp">
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_postanew_job"
+            android:id="@+id/tv_newComplaint"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
             android:fontFamily="@font/outfit_medium"
             android:gravity="start"
             android:lines="1"
-            android:text="@string/str_post_a_new_job"
-            android:textSize="@dimen/_22ssp"
+            android:text="@string/str_new_complaint"
+            android:textSize="@dimen/_20ssp"
             app:fontFamily="@font/outfit_semibold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/appCompatImageView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tv_selectjob_nature"
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:src="@drawable/ic_dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_newComplaint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_newComplaint" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_selectCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
-            android:text="@string/str_select_job_nature"
+            android:fontFamily="@font/outfit_medium"
+            android:text="@string/str_select_category"
             android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toTopOf="@id/spinner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_postanew_job" />
+            app:layout_constraintTop_toBottomOf="@+id/et_enter_title" />
 
         <androidx.appcompat.widget.AppCompatSpinner
-            android:id="@+id/spinnerFlats"
+            android:id="@+id/spinner"
             style="@style/Spinner"
             android:layout_width="0dp"
             android:layout_height="?attr/dropdownListPreferredItemHeight"
@@ -47,31 +60,31 @@
             android:entries="@array/flats_array"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_selectjob_nature" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_selectCategory" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_18sdp"
             android:fontFamily="@font/outfit_medium"
-            android:padding="@dimen/_2sdp"
             android:text="@string/str_title"
             android:textAlignment="textStart"
-            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/et_enter_title"
             android:textSize="@dimen/_14ssp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinnerFlats" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_newComplaint" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/et_title"
+            android:id="@+id/et_enter_title"
             android:layout_width="0dp"
             android:layout_height="@dimen/_32sdp"
             android:layout_marginTop="@dimen/_6sdp"
             android:background="@drawable/bg_rounded_corner_color"
             android:backgroundTint="@color/light_gary"
-            android:text=""
+            android:hint=""
+            android:paddingStart="@dimen/_4sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_title" />
@@ -85,55 +98,105 @@
             android:fontFamily="@font/outfit_medium"
             android:padding="@dimen/_2sdp"
             android:text="@string/str_description"
+            app:layout_constraintBottom_toTopOf="@id/et_description"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="@dimen/_14ssp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_title" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_description"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_132sdp"
+            android:layout_height="0dp"
             android:layout_marginTop="@dimen/_6sdp"
             android:background="@drawable/bg_rounded_corner_color"
             android:backgroundTint="@color/light_gary"
-            android:lines="7"
-            android:text="@string/large_text"
+            android:gravity="start"
+            android:hint=""
+            android:lines="6"
+            android:paddingHorizontal="@dimen/_4sdp"
             android:textSize="@dimen/_14ssp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_desc" />
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/_62sdp"
+            android:layout_height="@dimen/_62sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_description" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:text="@string/str_please_upload_the_images"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toTopOf="@id/btn_upload_photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img"
+            app:layout_constraintTop_toTopOf="@id/img" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_upload_photo"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_26sdp"
             android:backgroundTint="@color/light_gary"
-            android:drawableEnd="@drawable/ic_upload_photo"
             android:text="@string/str_upload_photo"
-            android:textColor="@color/black"
+            android:textColor="#10B981"
             app:cornerRadius="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/img"
+            app:layout_constraintEnd_toStartOf="@id/tv_no_fileChosen"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView4" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_no_fileChosen"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/str_no_file_chosen"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/btn_upload_photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_upload_photo"
+            app:layout_constraintTop_toTopOf="@id/btn_upload_photo" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_uploaded_photo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_6sdp"
+            tools:listitem="@layout/item_upload_photo"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/btn_submit"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_description" />
+            app:layout_constraintTop_toBottomOf="@+id/img" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_submit"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_22sdp"
-            android:backgroundTint="@color/black"
-            android:drawableEnd="@drawable/ic_upload_photo"
-            android:text="Submit"
+            android:layout_marginHorizontal="@dimen/_22sdp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/str_submit_complaint"
             android:textColor="@color/white"
             app:cornerRadius="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_upload_photo" />
+            app:layout_constraintStart_toStartOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

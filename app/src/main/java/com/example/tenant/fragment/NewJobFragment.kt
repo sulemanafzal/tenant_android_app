@@ -23,7 +23,7 @@ class NewJobFragment : Fragment() {
     ): View? {
         binding = FragmentNewJobBinding.inflate(layoutInflater, container, false)
 
-        val joblist = Constants.getJobDetail()
+        val joblist = Constants.getJobDetail(requireContext())
 
         binding?.apply {
             rvNewJob.layoutManager =

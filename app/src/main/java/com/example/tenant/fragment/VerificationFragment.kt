@@ -21,7 +21,7 @@ class VerificationFragment : Fragment() {
 
         _binding?.apply {
             btnVerify.setOnClickListener {
-                findNavController().navigate(R.id.action_verificationFragment_to_tenantRegistrationProcessFragment)
+                findNavController().navigate(R.id.action_verificationFragment_to_homeFragment)
             }
         }
 

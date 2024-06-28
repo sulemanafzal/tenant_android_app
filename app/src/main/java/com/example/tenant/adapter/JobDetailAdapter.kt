@@ -18,19 +18,16 @@ class JobDetailAdapter(private val joblist: ArrayList<JobCard>, val context: Con
     override fun getItemCount() = joblist.size
 
     override fun onBindViewHolder(holder: JobViewHolder, position: Int) {
-
         val jobitem = joblist[position]
         holder.bind(jobitem)
-
     }
-
     class JobViewHolder(val binding: ItemJobBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(jobitem: JobCard) {
-            binding.jobDate.text = jobitem.jobDateId.toString()
-            binding.jobDescription.text = jobitem.jobDescriptionId.toString()
-            binding.jobTitle.text = binding.jobTitle.toString()
+            binding.jobDate.text = jobitem.jobDateId
+            binding.jobDescription.text = jobitem.jobDescriptionId
+            binding.jobTitle.text = jobitem.jobTitleId
             binding.imgApproval.setImageResource(jobitem.imgApprovalId)
-            binding.jobStatus.text = jobitem.jobStatusId.toString()
+            binding.jobStatus.text = jobitem.jobStatusId
             binding.showDetailsButton.setOnClickListener {
 
             }

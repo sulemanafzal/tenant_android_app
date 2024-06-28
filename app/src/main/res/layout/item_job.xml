@@ -30,7 +30,6 @@
             android:layout_marginStart="@dimen/_12sdp"
             android:layout_marginEnd="@dimen/_12sdp"
             android:backgroundTint="@color/black"
-            android:focusable="true"
             android:fontFamily="@font/outfit_semibold"
             android:lines="1"
             android:padding="@dimen/_4sdp"
