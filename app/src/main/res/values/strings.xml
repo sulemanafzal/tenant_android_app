@@ -4,6 +4,7 @@
         "A material metaphor is the unifying theory of a rationalized space and a system of motion."
         "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
         "technologically advanced and open to imagination and magic.\n"
+        the unifying theory of a rationalized space and a system of motion."
         "Surfaces and edges of the material provide visual cues that are grounded in reality. The "</string>
     <string name="str_number_or_email">Number or Email</string>
     <string name="str_name">User Name</string>
@@ -71,7 +72,7 @@
     <string name="str_new_complaint">New Complaint</string>
     <string name="str_select_category">Select Category</string>
     <string name="str_no_file_chosen">No File Chosen</string>
-    <string name="str_photo">Photo</string>
+    <string name="str_photo">Photos</string>
 
     <string-array name="flats_array">
         <item>Flat F1001</item>
