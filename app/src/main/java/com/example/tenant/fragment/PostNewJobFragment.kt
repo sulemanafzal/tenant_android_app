@@ -13,6 +13,7 @@ import android.view.ViewGroup
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tenant.R
 import com.example.tenant.adapter.UploadPhotoAdapter
@@ -39,6 +40,12 @@ class PostNewJobFragment : Fragment() {
 
         setupRecyclerView()
         setupButtonClickListener()
+
+        binding.apply {
+            btnSubmit.setOnClickListener {
+                findNavController().navigate(R.id.action_postNewJobFragment_to_repairWorkFragment)
+            }
+        }
 
         return binding.root
     }
@@ -73,17 +80,6 @@ class PostNewJobFragment : Fragment() {
         val intent = Intent(Intent.ACTION_PICK)
         intent.type = "image/*"
         startActivityForResult(intent, REQUEST_CODE_PICK_IMAGE)
-    }
-
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == REQUEST_CODE_PERMISSION && grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            pickImageFromGallery()
-        }
     }
 
     @Deprecated("Deprecated in Java")

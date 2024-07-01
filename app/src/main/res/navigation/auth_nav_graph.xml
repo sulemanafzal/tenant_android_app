@@ -84,7 +84,11 @@
         android:id="@+id/postNewJobFragment"
         android:name="com.example.tenant.fragment.PostNewJobFragment"
         android:label="fragment_post_new_job"
-        tools:layout="@layout/fragment_post_new_job" />
+        tools:layout="@layout/fragment_post_new_job" >
+        <action
+            android:id="@+id/action_postNewJobFragment_to_repairWorkFragment"
+            app:destination="@id/repairWorkFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.tenant.fragment.HomeFragment"
@@ -94,4 +98,9 @@
             android:id="@+id/action_homeFragment_to_postNewJobFragment"
             app:destination="@id/postNewJobFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/repairWorkFragment"
+        android:name="com.example.tenant.fragment.RepairWorkFragment"
+        android:label="fragment_repair_work"
+        tools:layout="@layout/fragment_repair_work" />
 </navigation>

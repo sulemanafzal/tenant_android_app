@@ -10,7 +10,28 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/_8sdp">
+        android:layout_margin="@dimen/_12sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tV_Title"
+            android:src="@drawable/baseline_keyboard_backspace_24" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:src="@drawable/ic_dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_back" />
+
+
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tV_Title"
@@ -18,11 +39,12 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/outfit_semibold"
             android:text="@string/str_fan_repair_work"
+            android:layout_marginTop="@dimen/_18sdp"
             android:textSize="@dimen/_20ssp"
             app:layout_constraintBottom_toTopOf="@id/tV_ComplaintId"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/img_back" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tV_ComplaintId"
@@ -84,9 +106,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_4sdp"
             android:fontFamily="@font/outfit_medium"
-            android:textColor="@color/gray"
             android:text="@string/large_text"
             android:textAlignment="textStart"
+            android:textColor="@color/gray"
             android:textSize="@dimen/_12ssp"
             app:layout_constraintBottom_toTopOf="@id/tV_date"
             app:layout_constraintEnd_toEndOf="parent"
@@ -139,22 +161,22 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_8sdp"
             android:orientation="horizontal"
-            tools:listitem="@layout/item_upload_photo"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toTopOf="@id/btnDone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_photo" />
+            app:layout_constraintTop_toBottomOf="@id/tv_photo"
+            tools:listitem="@layout/item_upload_photo" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnDone"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_22sdp"
             android:backgroundTint="@color/green"
             android:text="@string/str_done"
             app:cornerRadius="@dimen/_6sdp"
-            android:layout_marginTop="@dimen/_22sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/recyclerViewPhotos" />
