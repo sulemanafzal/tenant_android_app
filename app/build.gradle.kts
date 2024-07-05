@@ -54,8 +54,8 @@ dependencies {
     implementation("com.intuit.sdp:sdp-android:1.1.1")
 
 // Navigation Component
-    implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
-    implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
     //OtpView/PinView
     implementation("com.github.mukeshsolanki:android-otpview-pinview:2.1.2")
     //load image
@@ -63,5 +63,8 @@ dependencies {
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
 
     implementation ("com.github.dhaval2404:imagepicker:2.1")
+
+    //SmothBottomBar
+    implementation ("com.github.ibrahimsn98:SmoothBottomBar:1.7.9")
 
 }

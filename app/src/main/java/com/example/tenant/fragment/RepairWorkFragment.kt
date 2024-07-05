@@ -5,15 +5,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.tenant.R
+import com.example.tenant.databinding.FragmentRepairWorkBinding
 
 class RepairWorkFragment : Fragment() {
+
+    private lateinit var binding: FragmentRepairWorkBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_repair_work, container, false)
+        binding =  FragmentRepairWorkBinding.inflate(layoutInflater, container, false)
+
+        binding.apply {
+            btnDone.setOnClickListener {
+                findNavController().navigate(R.id.action_repairWorkFragment_to_homeFragment)
+            }
+        }
+        return binding.root
     }
 }

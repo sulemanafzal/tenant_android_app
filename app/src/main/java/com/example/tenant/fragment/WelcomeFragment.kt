@@ -20,14 +20,13 @@ class WelcomeFragment : Fragment() {
     ): View? {
 
         _binding = FragmentWelcomeBinding.inflate(inflater, container, false)
+        val view = _binding?.root
 
         _binding?.apply {
             imgNext.setOnClickListener {
                 findNavController().navigate(R.id.action_welcomeFragment_to_signUpFragment)
             }
         }
-
-        val view = _binding?.root
 
         return view
     }

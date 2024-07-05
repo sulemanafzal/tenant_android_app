@@ -39,7 +39,7 @@
         tools:layout="@layout/fragment_verification" >
         <action
             android:id="@+id/action_verificationFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/tenanthomeFragment" />
     </fragment>
     <fragment
         android:id="@+id/registrationFragment"
@@ -90,10 +90,10 @@
             app:destination="@id/repairWorkFragment" />
     </fragment>
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.tenant.fragment.HomeFragment"
+        android:id="@+id/tenanthomeFragment"
+        android:name="com.example.tenant.fragment.TenantHomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_tenant_home" >
         <action
             android:id="@+id/action_homeFragment_to_postNewJobFragment"
             app:destination="@id/postNewJobFragment" />
@@ -102,5 +102,13 @@
         android:id="@+id/repairWorkFragment"
         android:name="com.example.tenant.fragment.RepairWorkFragment"
         android:label="fragment_repair_work"
-        tools:layout="@layout/fragment_repair_work" />
+        tools:layout="@layout/fragment_repair_work" >
+        <action
+            android:id="@+id/action_repairWorkFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.tenant.fragment.HomeFragment"
+        android:label="HomeFragment" />
 </navigation>

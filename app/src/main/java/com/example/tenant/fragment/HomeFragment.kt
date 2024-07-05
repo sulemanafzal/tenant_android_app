@@ -5,39 +5,50 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.tenant.Constants
+import androidx.viewpager2.widget.ViewPager2
+import com.example.newshunt.adapter.ViewPagerAdapter
 import com.example.tenant.R
-import com.example.tenant.adapter.RecentAdapter
+import com.example.tenant.adapter.VPAdapter
 import com.example.tenant.databinding.FragmentHomeBinding
-import com.example.tenant.model.RecentModel
 
 class HomeFragment : Fragment() {
 
+    private lateinit var navController: NavController
     private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
+
+    private lateinit var adapter: VPAdapter
+    private lateinit var viewPager: ViewPager2
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
-
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        navController = findNavController()
         val view = _binding?.root
-
-        val complaintList = Constants.getRecentItem(requireContext())
-
-        _binding?.apply {
-            rvRecent.layoutManager = LinearLayoutManager(requireContext())
-            val adapter = RecentAdapter(requireContext(), complaintList)
-            rvRecent.adapter = adapter
+        if (view != null) {
+            viewPager = view.findViewById(R.id.viewPager_home)
         }
+        adapter = VPAdapter(requireActivity())
+        viewPager.adapter = adapter
         _binding?.apply {
-            btnFab.setOnClickListener {
-                findNavController().navigate(R.id.action_homeFragment_to_postNewJobFragment)
+            btnNew.setOnClickListener {
+                viewPager.currentItem = 0
+            }
+            btnOngoing.setOnClickListener {
+                viewPager.currentItem = 1
             }
         }
-
         return view
+
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

@@ -10,8 +10,8 @@ import com.example.tenant.R
 import com.example.tenant.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private var _binding: ActivityMainBinding? = null
 
+    private var _binding: ActivityMainBinding? = null
     private lateinit var navController: NavController
     private lateinit var navHostFragment: NavHostFragment
     private var isBackPressed = false
