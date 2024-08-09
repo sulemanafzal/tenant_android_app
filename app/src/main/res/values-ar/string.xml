@@ -35,7 +35,7 @@
     <string name="str_provide_valid_email">البريد الإلكتروني</string>
     <string name="str_tenants_registration_process">عملية تسجيل المستأجرين</string>
     <string name="str_select_the_flat_from_options_below">اختر الشقة من الخيارات أدناه</string>
-    <string name="str_building_name">Building Name</string>
+    <string name="str_building_name">اسم المبنى</string>
     <string name="str_you_are_now_registered_as_tenant_for_property">أنت الآن مسجل كمستأجر \n للعقار:</string>
     <string name="str_building_number">رقم المبنى</string>
     <string name="str_flat_number">عدد مسطح</string>
@@ -54,6 +54,83 @@
     <string name="str_register_yourself_now_to_enjoy_our_services">سجل نفسك الآن لتستمتع بخدماتنا!</string>
     <string name="str_tenant_account">حساب المستأجر</string>
 
+    <string name="str_rejected_by_owner">مرفوض من قبل المالك</string>
+
+
+    <string name="str_select_job_nature">اختر طبيعة الوظيفة</string>
+    <string name="str_title">أدخل العنوان</string>
+    <string name="str_description">وصف</string>
+    <string name="str_upload_photo">حمل الصورة</string>
+    <string name="str_recent">مؤخرًا</string>
+    <string name="str_posted_june_25_2024">تاريخ النشر: 25 يونيو 2024</string>
+    <string name="str_time">12:25 مساءً</string>
+    <string name="str_approval_pending_from_owner">الموافقة في انتظار المالك</string>
+    <string name="str_status">حالة:</string>
+    <string name="str_status_txt">موافقتك معلقة</string>
+    <string name="str_complaint_id_3874981">رقم الشكوى: 3874981</string>
+    <string name="str_complaint_by">بواسطة:</string>
+    <string name="str_fan_repair_work">أعمال إصلاح المروحة</string>
+    <string name="str_please_upload_the_images">يرجى تحميل الصور، حجمها أقل من 1 ميغابايت</string>
+    <string name="str_submit_complaint">تقديم شكوى</string>
+    <string name="str_new_complaint">شكوى جديدة</string>
+    <string name="str_select_category">اختر الفئة</string>
+    <string name="str_no_file_chosen">لم تقم باختيار ملف</string>
+    <string name="str_photo">الصور</string>
+    <string name="str_new">جديد</string>
+    <string name="str_ongoing">جاري التنفيذ</string>
+    <string name="str_scheduled_maintenance">الصيانة المجدولة:</string>
+    <string name="str_tenant">مستأجر:</string>
+    <string name="str_property">ملكية:</string>
+    <string name="str_posted_on_2_july_2024">تم النشر بتاريخ: 2 يوليو 2024</string>
+    <string name="str_company_accepted_on_4_july_2024">تم قبول الشركة في: 4 يوليو 2024</string>
+    <string name="str__22_june_2024">22 June 2024</string>
+    <string name="str_date_and_time">التاريخ و الوقت</string>
+    <string name="str__11_am_01_pm">11 AM - 01 PM</string>
+    <string name="str__02_931_9391">02 931 9391</string>
+    <string name="str_maintenance_person">شخص الصيانة #:</string>
+    <string name="str_click_to_view_description">انقر لعرض الوصف</string>
+    <string name="str_photos_uploaded_by_worker">الصور التي تم تحميلها بواسطة العامل:</string>
+    <string name="str_add_new_worker">إضافة عامل جديد</string>
+    <string name="str_contact_number">رقم الاتصال</string>
+    <string name="str_select_trades">حدد الصفقات</string>
+    <string name="str_plumbing">السباكة</string>
+    <string name="str_add_worker">إضافة عامل</string>
+    <string name="str_choose_language">اختر اللغة</string>
+    <string name="str_english">إنجليزي</string>
+    <string name="str_arabic">عربي</string>
+    <string name="str_home">بيت</string>
+    <string name="str_worker">عامل</string>
+    <string name="str_language">لغة</string>
+    <string name="str_registration">تسجيل</string>
+    <string name="str_submit">يُقدِّم</string>
+    <string name="str_email_optional">البريد الإلكتروني اختياري)</string>
+    <string name="str_abc_gmail_com">abc@gmail.com</string>
+    <string name="str_flat_3976">شقة: 3976</string>
+    <string name="str_my_properties">خصائصي</string>
+    <string name="str_search_property_by_title">البحث عن الممتلكات حسب العنوان</string>
+    <string name="str_building_50_district_abc_city_xyz">مبنى 50، المنطقة ABC، المدينة XYZ</string>
+    <string name="str_add_a_new_property">إضافة عقار جديد</string>
+    <string name="str_property_title">عنوان العقار</string>
+    <string name="str_enter_property_title">أدخل عنوان العقار</string>
+    <string name="str_building">مبنى</string>
+    <string name="str_villa">فيلا</string>
+    <string name="str_location_code">كود الموقع</string>
+    <string name="str_enter_district">أدخل المنطقة</string>
+    <string name="str_enter_city">أدخل المنطقة</string>
+    <string name="str_enter_location_code">أدخل رمز الموقع</string>
+    <string name="str_google_map_location">الموقع على خريطة جوجل</string>
+    <string name="str_add_property">أضف خاصية</string>
+    <string name="str_cancel">يلغي</string>
+    <string name="str_username">ماثيو جون</string>
+
+    <string name="str_total_flats">"إجمالي الشقق: "</string>
+    <string name="str_abc_maintenance">صيانة ايه بي سي</string>
+    <string name="str_maintained_by">تم إصلاحها بواسطة:</string>
+    <string name="str_managements">الإدارات</string>
+    <string name="str_flat_management">إدارة مسطحة</string>
+    <string name="str_tenant_management">إدارة المستأجرين</string>
+    <string name="str_maintenance_company_management">إدارة المستأجرين</string>
+    <string name="str_trades">الصفقات</string>
     <string-array name="flats_array">
         <item>مستوي F1001</item>
         <item>مستوي F1002</item>
@@ -62,6 +139,6 @@
         <!-- Add more items as needed -->
     </string-array>
 
-    <string name="str_delete">Delete</string>
+    <string name="str_delete">يمسح</string>
 
 </resources>

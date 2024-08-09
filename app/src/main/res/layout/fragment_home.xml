@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.HomeFragment">
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
@@ -17,58 +16,115 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/img_user_image"
-            style="@style/circleImageView"
             android:layout_width="@dimen/_52sdp"
             android:layout_height="@dimen/_52sdp"
-            android:layout_marginStart="@dimen/_26sdp"
-            android:src="@drawable/ic_placeholder"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/im"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circleImageView" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_user_name"
+            android:id="@+id/tv_name"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/outfit_medium"
             android:text="@string/str_name"
             android:textColor="@color/white"
-            android:textSize="@dimen/_16ssp"
-            app:fontFamily="@font/outfit_semibold"
-            app:layout_constraintBottom_toTopOf="@id/tv_bulding_no"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toTopOf="@id/img_home"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/img_user_image"
+            app:layout_constraintStart_toEndOf="@+id/img_user_image"
             app:layout_constraintTop_toTopOf="@id/img_user_image" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_bulding_no"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="@dimen/_2sdp"
-            android:text="@string/str_building_number"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_10ssp"
-            app:fontFamily="@font/outfit_medium"
-            app:layout_constraintBottom_toTopOf="@id/tv_flat_no"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/tv_user_name"
-            app:layout_constraintTop_toBottomOf="@id/tv_user_name" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_home"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:src="@drawable/baseline_home_24"
+            app:layout_constraintBottom_toBottomOf="@id/img_user_image"
+            app:layout_constraintEnd_toStartOf="@id/tv_flats"
+            app:layout_constraintStart_toEndOf="@id/img_user_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_flat_no"
+            android:id="@+id/tv_flats"
             android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="@string/str_flat_number"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/outfit_medium"
+            android:text="@string/str_flat_3976"
             android:textColor="@color/white"
-            android:textSize="@dimen/_10ssp"
-            app:fontFamily="@font/outfit_medium"
-            app:layout_constraintBottom_toBottomOf="@+id/img_user_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/tv_bulding_no"
-            app:layout_constraintTop_toBottomOf="@id/tv_bulding_no" />
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_home"
+            app:layout_constraintEnd_toStartOf="@id/img_property"
+            app:layout_constraintStart_toEndOf="@+id/img_home"
+            app:layout_constraintTop_toTopOf="@+id/img_home" />
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_property"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_property"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_flats"
+            app:layout_constraintEnd_toStartOf="@id/tv_property"
+            app:layout_constraintStart_toEndOf="@+id/tv_flats"
+            app:layout_constraintTop_toTopOf="@+id/tv_flats" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_property"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_medium"
+            android:text="@string/str_property"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_property"
+            app:layout_constraintEnd_toStartOf="@id/img_tenants"
+            app:layout_constraintStart_toEndOf="@+id/img_property"
+            app:layout_constraintTop_toTopOf="@+id/img_property" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_tenants"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/user"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_flats"
+            app:layout_constraintEnd_toStartOf="@id/tv_tenants"
+            app:layout_constraintStart_toEndOf="@+id/tv_property"
+            app:layout_constraintTop_toTopOf="@+id/tv_flats" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_tenants"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_medium"
+            android:text="@string/str_tenant"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_property"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_tenants"
+            app:layout_constraintTop_toTopOf="@+id/img_property" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_edit_profile"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
@@ -85,7 +141,7 @@
         android:id="@+id/btn_new"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_6sdp"
         android:backgroundTint="@color/blue"
         android:text="@string/str_new"
         app:cornerRadius="@dimen/_6sdp"
@@ -98,7 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_8sdp"
-        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_6sdp"
         android:backgroundTint="@color/blue"
         android:text="@string/str_ongoing"
         app:cornerRadius="@dimen/_6sdp"
@@ -106,34 +162,25 @@
         app:layout_constraintStart_toEndOf="@+id/btn_new"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView2"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:src="@drawable/ic_true"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_ongoing"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintTop_toTopOf="@+id/btn_ongoing" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager_home"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatImageView2"
+        app:layout_constraintStart_toStartOf="@+id/btn_new"
         app:layout_constraintTop_toBottomOf="@+id/btn_ongoing" />
 
 
-
-    <me.ibrahimsn.lib.SmoothBottomBar
-        android:id="@+id/bottomBar"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_54sdp"
-        app:backgroundColor="@color/green"
-        app:corners="top_left|bottom_right"
-        app:iconTint="#C8FFFFFF"
-        app:iconTintActive="#FFFFFF"
-        app:indicatorColor="#2DFFFFFF"
-        app:itemPadding="@dimen/_6sdp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_menu"
-        app:textColor="@color/black"
-        app:textSize="14sp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

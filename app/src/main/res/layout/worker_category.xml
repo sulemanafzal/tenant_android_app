@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginHorizontal="@dimen/_6sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgCategory"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/user"
+        android:padding="@dimen/_14sdp"
+        android:layout_marginHorizontal="@dimen/_6sdp"
+        android:background="@drawable/icon_bg_selector" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electrician"
+        android:layout_gravity="center"
+        android:fontFamily="@font/outfit_regular"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:textSize="@dimen/_10ssp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

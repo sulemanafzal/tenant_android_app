@@ -2,23 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/howe_fragment"
-        android:title="Home"
+        android:id="@+id/navHome"
+        android:title="@string/str_home"
         android:icon="@drawable/baseline_home_24"/>
 
     <item
-        android:id="@+id/property_fragment"
-        android:title="Property"
+        android:id="@+id/navProperty"
+        android:title="@string/str_property"
         android:icon="@drawable/ic_property"/>
 
     <item
-        android:id="@+id/worker_fragment"
-        android:title="Worker"
+        android:id="@+id/navWorker"
+        android:title="@string/str_worker"
         android:icon="@drawable/user"/>
 
     <item
-        android:id="@+id/language_fragment"
-        android:title="Language"
+        android:id="@+id/nav_Language"
+        android:title="@string/str_language"
         android:icon="@drawable/ic_language"/>
 
 </menu>

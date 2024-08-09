@@ -38,9 +38,9 @@
         <ImageView
             android:id="@+id/img_welcom_screen"
             android:layout_width="@dimen/_130sdp"
-            android:layout_height="@dimen/_70sdp"
+            android:layout_height="@dimen/_80sdp"
             android:layout_marginStart="@dimen/_12sdp"
-            android:background="@color/black"
+            android:src="@drawable/rabt_logo"
             app:layout_constraintBottom_toBottomOf="@+id/wave_top"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/wave_top" />

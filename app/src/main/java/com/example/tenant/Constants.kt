@@ -152,4 +152,97 @@ object Constants {
         )
         return recentList
     }
+
+    fun getnewRequistItem(context: Context): List<RecentModel> {
+        val recentList = ArrayList<RecentModel>()
+        recentList.add(
+            RecentModel(
+                "By: Flat 234, Building 405, District, City",
+                "",
+                "Completed",
+                "Your Approval is Pending ",
+                R.color.red,
+                "June 26, 2024",
+                "1:30 PM"
+            )
+        )
+        recentList.add(
+            RecentModel(
+                "By: Flat 234, Building 405, District, City",
+                "",
+                "Completed",
+                "Your Approval is Pending ",
+                R.color.red,
+                "June 26, 2024",
+                "1:30 PM"
+            )
+        )
+        recentList.add(
+            RecentModel(
+                "By: Flat 234, Building 405, District, City",
+                "",
+                "Completed",
+                "Your Approval is Pending ",
+                R.color.red,
+                "June 26, 2024",
+                "1:30 PM"
+            )
+        )
+        recentList.add(
+            RecentModel(
+                "By: Flat 234, Building 405, District, City",
+                "",
+                "Completed",
+                "Your Approval is Pending ",
+                R.color.red,
+                "June 26, 2024",
+                "1:30 PM"
+            )
+        )
+        recentList.add(
+            RecentModel(
+                "By: Flat 234, Building 405, District, City",
+                "",
+                "Completed",
+                "Your Approval is Pending ",
+                R.color.red,
+                "June 26, 2024",
+                "1:30 PM"
+            )
+        )
+        recentList.add(
+            RecentModel(
+                "By: Flat 234, Building 405, District, City",
+                "",
+                "Completed",
+                "Your Approval is Pending ",
+                R.color.red,
+                "June 26, 2024",
+                "1:30 PM"
+            )
+        )
+        recentList.add(
+            RecentModel(
+                "3874982",
+                "Light Replacement",
+                "Completed",
+                "bbb",
+                R.color.red,
+                "June 26, 2024",
+                "1:30 PM"
+            )
+        )
+        recentList.add(
+            RecentModel(
+                "3874982",
+                "Light Replacement",
+                "Completed",
+                "bbb",
+                R.color.red,
+                "June 26, 2024",
+                "1:30 PM"
+            ),
+        )
+        return recentList
+    }
 }

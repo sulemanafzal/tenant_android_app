@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Tenant</string>
+
     <string name="large_text">
         "A material metaphor is the unifying theory of a rationalized space and a system of motion."
         "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
@@ -29,7 +30,6 @@
     <string name="str_please_choose_one_to_continue">Please choose one to continue</string>
     <string name="str_sign_in">Sign In</string>
     <string name="str_already_a_registered_user">Already a Registered User?</string>
-
 
     <string name="str_name_required">name Required</string>
     <string name="str_contact_number_required">contact Number Required</string>
@@ -65,7 +65,9 @@
     <string name="str_time">12:25 PM</string>
     <string name="str_approval_pending_from_owner">Approval Pending from Owner</string>
     <string name="str_status">Status:</string>
+    <string name="str_status_txt">Your Approval is Pending </string>
     <string name="str_complaint_id_3874981">Complaint ID: 3874981</string>
+    <string name="str_complaint_by">By: </string>
     <string name="str_fan_repair_work">Fan Repair Work</string>
     <string name="str_please_upload_the_images">Please upload the images, size less than 1MB</string>
     <string name="str_submit_complaint">Submit Complaint</string>
@@ -87,6 +89,48 @@
     <string name="str_maintenance_person">Maintenance Person #:</string>
     <string name="str_click_to_view_description">Click to View Description</string>
     <string name="str_photos_uploaded_by_worker">Photos Uploaded by Worker:</string>
+    <string name="str_add_new_worker">Add New Worker</string>
+    <string name="str_contact_number">Contact Number</string>
+    <string name="str_select_trades">Select Trades</string>
+    <string name="str_plumbing">Plumbing</string>
+    <string name="str_add_worker">Add Worker</string>
+    <string name="str_choose_language">Choose Language</string>
+    <string name="str_english">English</string>
+    <string name="str_arabic">Arabic</string>
+    <string name="str_home">Home</string>
+    <string name="str_worker">Worker</string>
+    <string name="str_language">Language</string>
+    <string name="str_registration">Registration</string>
+    <string name="str_submit">Submit</string>
+    <string name="str_email_optional">Email (optional)</string>
+    <string name="str_abc_gmail_com">abc@gmail.com</string>
+    <string name="str_flat_3976">Flat: 3976</string>
+    <string name="str_my_properties">My Properties</string>
+    <string name="str_search_property_by_title">Search property by title</string>
+    <string name="str_building_50_district_abc_city_xyz">Building 50, District ABC, City XYZ</string>
+    <string name="str_add_a_new_property">Add a New Property</string>
+    <string name="str_property_title">Property Title</string>
+    <string name="str_enter_property_title">Enter Property Title</string>
+    <string name="str_building">Building</string>
+    <string name="str_villa">Villa</string>
+    <string name="str_location_code">Location Code</string>
+    <string name="str_enter_district">Enter District</string>
+    <string name="str_enter_city">Enter City</string>
+    <string name="str_enter_location_code">Enter Location Code</string>
+    <string name="str_google_map_location">Google Map Location</string>
+    <string name="str_add_property">Add Property</string>
+    <string name="str_username">Matthew John</string>
+
+
+    <string name="str_cancel">Cancel</string>
+    <string name="str_total_flats">"Total Flats: "</string>
+    <string name="str_abc_maintenance">ABC Maintenance</string>
+    <string name="str_maintained_by">Maintained By:</string>
+    <string name="str_managements">Managements</string>
+    <string name="str_flat_management">Flat Management</string>
+    <string name="str_tenant_management">Tenant Management</string>
+    <string name="str_maintenance_company_management">Maintenance Company Management</string>
+    <string name="str_trades">Trades</string>
 
     <string-array name="flats_array">
         <item>Flat F1001</item>

@@ -19,7 +19,7 @@ class OngoingFragment : Fragment() {
         binding=  FragmentOngoingBinding.inflate(layoutInflater, container, false)
 
 
-        binding.apply {
+       /* binding.apply {
             tvViewDescription.setOnClickListener {
                 if (tVDescription.visibility == View.GONE) {
                     tVDescription.visibility = View.VISIBLE
@@ -29,7 +29,7 @@ class OngoingFragment : Fragment() {
                     tvViewDescription.text = "Click to View Description"
                 }
             }
-        }
+        }*/
 
 
 

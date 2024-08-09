@@ -9,5 +9,66 @@
         android:id="@+id/homeFragment"
         android:name="com.example.tenant.fragment.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_propertyFragment"
+            app:destination="@id/propertyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_workerFragment"
+            app:destination="@id/workerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.tenant.fragment.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/newRequestFragment"
+        android:name="com.example.tenant.fragment.NewRequestFragment"
+        android:label="fragment_new_request"
+        tools:layout="@layout/fragment_new_request" />
+    <fragment
+        android:id="@+id/ongoingFragment"
+        android:name="com.example.tenant.fragment.OngoingFragment"
+        android:label="fragment_ongoing"
+        tools:layout="@layout/fragment_ongoing" />
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.tenant.fragment.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/propertyFragment"
+        android:name="com.example.tenant.fragment.PropertyFragment"
+        android:label="fragment_property"
+        tools:layout="@layout/fragment_property" >
+        <action
+            android:id="@+id/action_propertyFragment_to_addPropertyFragment"
+            app:destination="@id/addPropertyFragment" />
+        <action
+            android:id="@+id/action_propertyFragment_to_propertyDetailFragment"
+            app:destination="@id/propertyDetailFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/workerFragment"
+        android:name="com.example.tenant.fragment.WorkerFragment"
+        android:label="fragment_worker"
+        tools:layout="@layout/fragment_worker" />
+    <fragment
+        android:id="@+id/addPropertyFragment"
+        android:name="com.example.tenant.fragment.AddPropertyFragment"
+        android:label="fragment_add_property"
+        tools:layout="@layout/fragment_add_property" />
+    <fragment
+        android:id="@+id/propertyDetailFragment"
+        android:name="com.example.tenant.fragment.PropertyDetailFragment"
+        android:label="fragment_property_detail"
+        tools:layout="@layout/fragment_property_detail" />
 </navigation>

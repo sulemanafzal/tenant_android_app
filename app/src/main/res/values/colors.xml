@@ -9,6 +9,7 @@
     <color name="blue_dark">#00008B</color>
     <color name="color_et_text">#E4E4E4</color>
     <color name="light_gary">#E6E6E6</color>
-    <color name="green">#2A99F1</color>
+    <color name="green">#3BC551</color>
+    <color name="btn_color_gary">#F5F5F5</color>
 
 </resources>

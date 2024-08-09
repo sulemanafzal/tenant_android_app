@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    tools:context="fragment.SignUpFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -59,7 +60,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_22sdp"
             android:fontFamily="@font/outfit_medium"
             android:text="@string/str_please_choose_one_to_continue"
             android:textColor="@color/black"
@@ -72,7 +73,7 @@
             android:id="@+id/owner_tv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_22sdp"
             android:background="@drawable/silver_round_shape"
             android:fontFamily="@font/outfit_regular"
             android:paddingVertical="5sp"
@@ -116,6 +117,7 @@
             android:text="@string/str_owner_and_tenant_both"
             android:textColor="@color/gray"
             android:textSize="@dimen/_15ssp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tenant_tv"
@@ -152,6 +154,7 @@
             android:text="@string/str_service_provider"
             android:textColor="@color/gray"
             android:textSize="@dimen/_15ssp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/mantinance_company_tv"
@@ -159,15 +162,15 @@
 
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/mantinance_and_service_provider_tv"
+            android:id="@+id/tv_worker"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10sdp"
             android:background="@drawable/silver_round_shape"
             android:fontFamily="@font/outfit_regular"
-            android:paddingVertical="5sp"
+            android:paddingVertical="@dimen/_5sdp"
             android:paddingStart="@dimen/_10sdp"
-            android:text="@string/maintenance_and_service_provider"
+            android:text="Worker"
             android:textColor="@color/gray"
             android:textSize="@dimen/_15ssp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -183,11 +186,12 @@
             android:backgroundTint="@color/blue"
             android:text="@string/str_continue"
             android:textSize="@dimen/_16ssp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.07"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mantinance_and_service_provider_tv"
+            app:layout_constraintTop_toBottomOf="@+id/tv_worker"
             app:layout_constraintWidth_percent="0.8" />
 
 

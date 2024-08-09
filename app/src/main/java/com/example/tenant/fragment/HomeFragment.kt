@@ -42,7 +42,13 @@ class HomeFragment : Fragment() {
             btnOngoing.setOnClickListener {
                 viewPager.currentItem = 1
             }
+            imgEditProfile.setOnClickListener {
+                findNavController().navigate(R.id.action_homeFragment_to_editProfileFragment)
+            }
+
+
         }
+
         return view
 
     }

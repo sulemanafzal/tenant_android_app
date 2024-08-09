@@ -22,7 +22,7 @@ class RepairWorkFragment : Fragment() {
 
         binding.apply {
             btnDone.setOnClickListener {
-                findNavController().navigate(R.id.action_repairWorkFragment_to_homeFragment)
+              //  findNavController().navigate(R.id.action_repairWorkFragment_to_homeFragment)
             }
         }
         return binding.root

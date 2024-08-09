@@ -31,7 +31,7 @@ class SignUpFragment : Fragment() {
             setupClickListener(ownerAndTenantTv)
             setupClickListener(mantinanceCompanyTv)
             setupClickListener(serviceProviderTv)
-            setupClickListener(mantinanceAndServiceProviderTv)
+            setupClickListener(tvWorker)
 
             continueBtn.setOnClickListener {
                 findNavController().navigate(R.id.action_signUpFragment_to_registrationFragment)
@@ -45,12 +45,13 @@ class SignUpFragment : Fragment() {
         tv.setOnClickListener {
             // Reset the background of the previously selected TextView
             selectedTextView?.setBackgroundResource(R.drawable.selected_background_tv)
-
             // Set the background of the newly selected TextView
             tv.setBackgroundResource(R.drawable.selected_background_tv)
-
             // Update the selected TextView reference
             selectedTextView = tv
+
+            val bundle = Bundle()
+            bundle.getString("destinationFragment")
         }
     }
 
